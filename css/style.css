@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+    text-align: center;
+    padding: 4.5vh 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+#logo { margin: 0 0 0 3vw}
+header nav>ul >li >a {
+    font: .8em 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#title, #zolaq { position: absolute; }
+#title {
+    width: 100%;
+    bottom: 17vh;
+}
+#zolaq {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(253, 99, 77, .3);
+    bottom:0;
+    transform: translate(0, 28px) skewY(-2.5deg);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h1 { font-size: 2em }
+h2 { font-size: 1.5em; text-transform: capitalize }
+h3 { font-size: 2.2em }
+h5 { font-size: .9em }
+h6 { font-size: .9em }
+
+.articles { padding: 60px 0 0 0}
+.col25 { padding: 30px 20px}
+article p, a {
+    font: .9em "Open Sans";
+    line-height: 24px;
+}
+article i {
+    font-size: 2.5em;
+}
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover }
+#yourbody { background: url('../img/yourbody.jpg') center/cover }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover }
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover }
+#grape { background: url('../img/grape.jpg') center/cover }
+#avocado { background: url('../img/avocado.jpg') center/cover }
+#leaders { height: 100vh; background: url('../img/leaders.jpg') center/cover; position: relative }
+
+.welaunch { position: absolute; top: 20vh; text-align: center }
+.welaunch h2 {
+    font: 2em "Open Sans";
+    text-transform: initial;
+}
+.welaunch p {
+    font: 1em "Open Sans";
+    line-height: 23px;
+}
+
+
+.fa-tint { color: #e3e9e9; font-size: 1em; margin-bottom: 5px; }
+.fa-user { color: #dfe5e5; font-size: 2em; margin-bottom: 5px; }
+.icon-strawberry { color: #e3e9e9; font-size: 2em; margin-bottom: 5px; }
+.icon-avocado { color: #fff; font-size: 1.5em; margin-bottom: 5px; }
+
+.vh50 {height: 50vh }
+.bgag { background: #fff}
+.bgyasil { background: var(--yasil) }
+.bgqirmizi { background: var(--qirmizi) }
+.txtag { color: #fff}
+.txtyasil { color: var(--yasil)}
+.txtqirmizi { color: var(--qirmizi)}
+.apadding { padding: 6.3vh 5vh }
+.acenter { text-align: center } 
+
+footer { background-color: #0c1119;}
+footer .row { padding: 30px 0 }
+footer h2 { font-size: .9em }
+footer p {
+    padding: 20px 0;
+    font: .8em "Open Sans";
+    line-height: 24px;
+    color: #8297a7;
+    font-weight: 400;
+}
+/* #icons ul li { padding: 0 5px; text-align: left } */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 19px 10px;
+}
+.fa-facebook-f { background-color: #2e3092 }
+.fa-twitter { background-color: #00adef }
+.fa-youtube { background-color: #ed3123 }
+.fa-linkedin-in { background-color: #16198f }
+
+input {
+    font: .8em "Open Sans";
+    color: #83969f;
+    padding: 18px 20px;
+    text-align: left;
+    border: none ;
+    border-radius: 3px;
+    margin: 5px;
+}
+#inp1 { width: 200px}
+#inp2 { width: 300px}
+button {
+    font: bold .9em ;
+    line-height: 30px;
+    padding: 12px 20px;
+    text-align: left;
+    max-width: 180px;
+    border: none ;
+    border-radius: 3px;
+    margin: 5px;
+}
+#icons ul li { display: inline-block }
+
+
+@media only screen and (min-width: 768px) {
+    header { text-align: initial}
+    .container { width: 74vw; margin: auto }
+    #title { left: 7.5vw; width: inherit; text-align: right }
+    h1 { font: 2.5em }
+    h5 { padding: 0 20px 0 0 }
+    nav ul { float: right;}
+    header> nav ul li { display: inline-block; padding: 0 5.7vh 0 0}
+    .row::after {display: table; content: ''; clear: both}
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+    .fright { float: right}
+    .fleft { float: left}
+    #leaders { height: 125vh }
+    .welaunch { width: 60%; left:20vw; top: 38vh}
+    .welaunch h2 { font-size: 2.8em }
+    .welaunch p { padding: 0 120px }
+    .colflex { padding: 1%; }
+    #resources { width: 33.9% } 
+    #aboutus { width: 39% }  
+    #stayintouch { width:27% }  
+}
